@@ -1,16 +1,17 @@
-### Dependencies?
+### Are there any dependencies that need to be addresses before this PR is merged?
 
 
-### Ticket?
+### What ticket(s) or other PRs does this relate to?
 
 
-### What Was The Problem? 
+### What was the problem or feature?
 
 
-### What Was The Solution?
+### What was the solution?
 
 
-### Where Does This Work Fall On The Good - Fast Spectrum?
+### Where does this work fall on the Good - Fast spectrum?
 
 
-### Any Additional Work Needed As A Result?
+### Any additional work needed as a result of merging this PR (deploy steps, other PRs, etc.)?
+
