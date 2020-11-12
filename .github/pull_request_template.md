@@ -1,4 +1,4 @@
-### Are there any dependencies that need to be addresses before this PR is merged?
+### Are there any dependencies that need to be addressed before this PR is merged?
 
 
 ### What ticket(s) or other PRs does this relate to?
