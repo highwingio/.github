@@ -15,3 +15,5 @@
 
 ### Any additional work needed as a result of merging this PR (deploy steps, other PRs, etc.)?
 
+
+### PR includes gif conveying current emotional state?
