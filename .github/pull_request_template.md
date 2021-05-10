@@ -9,9 +9,12 @@
 
 ### What was the solution?
 
+- [ ] Security Impact has been considered (if yes please describe)
+- [ ] Network Impacts have been considered (if yes please describe)
+
+
 
 ### Where does this work fall on the Good - Fast spectrum?
 
 
 ### Any additional work needed as a result of merging this PR (deploy steps, other PRs, etc.)?
-
