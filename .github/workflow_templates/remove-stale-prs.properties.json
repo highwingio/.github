@@ -1,0 +1,6 @@
+{
+  "name": "Highwing PR Cleanup",
+  "description": "Flag PRs for deletion after 30 days of inactivity",
+  "iconName": "opticon trash",
+  "categories": ["Automation", "utilities"]
+}
