@@ -1,7 +1,12 @@
 name: 'Highwing PR Cleanup'
 on:
-  schedule:
-    - cron: '0 0 * * *'
+  workflow_call:
+    inputs:
+      days_before_stale:
+        type: number
+        default: 14
+        required: false
+        description: 'Number of days before an open PR is considered stale'
 
 permissions:
   contents: write
@@ -9,21 +14,21 @@ permissions:
   pull-requests: write
 
 jobs:
-  stale:
+  remove-stale-prs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/stale@v9
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           # Staling issues and PR's
-          days-before-stale: 30
+          days-before-stale: ${{ inputs.days_before_stale }}
           stale-issue-label: stale
           stale-pr-label: stale
           stale-issue-message: |
-            This issue has been automatically marked as stale because it has been open 30 days
+            This issue has been automatically marked as stale because it has been open ${{ inputs.days_before_stale }} days
             with no activity. Remove stale label/comment or this issue will be closed in 7 days.
           stale-pr-message: |
-            This PR has been automatically marked as stale because it has been open 30 days
+            This PR has been automatically marked as stale because it has been open ${{ inputs.days_before_stale }} days
             with no activity. Remove stale label/comment or this PR will be closed in 7 days.
           # Not stale if have this labels or part of milestone
           exempt-issue-labels: bug,wip,on-hold
